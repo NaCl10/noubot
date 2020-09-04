@@ -4,7 +4,7 @@ This is my bad Discord bot. It doesn't do much, I mostly just made it to learn a
 
 ## Usage
 
-Head over to the [releases](https://github.com/NaCl10/naclbot/releases) and download the latest stable release.
+Head over to the [releases](https://github.com/NaCl10/naclbot/releases) and download the file `main.py` from the latest stable release.
 
 Run main.py (IN THE SAME DIRECTORY AS THE FILE):
 
