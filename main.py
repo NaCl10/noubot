@@ -46,7 +46,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if 'no u' in message.content.lower() or ' nou ' in message.content.lower() or 'no-u' in message.content.lower() or 'no you' in message.content.lower() or 'no-you' in message.content.lower():
+    if 'no u' in message.content.lower() or ' nou ' in message.content.lower() or 'no-u' in message.content.lower() or 'no you' in message.content.lower() or 'no-you' in message.content.lower() or u'no\u00A0u' in message.content.lower() or u'no\u00A0you' in message.content.lower(): # \u00A0 is a non-breaking space, the other kind of space in Unicode
         await message.channel.send('no u')
 
     # This has to be here, otherwise allll the other @client.commands won't work
