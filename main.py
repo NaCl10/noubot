@@ -46,7 +46,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if 'no u' in message.content.lower() or 'nou' in message.content.lower() or 'no-u' in message.content.lower() or 'no you' in message.content.lower() or 'no-you' in message.content.lower():
+    if 'no u' in message.content.lower() or ' nou ' in message.content.lower() or 'no-u' in message.content.lower() or 'no you' in message.content.lower() or 'no-you' in message.content.lower():
         await message.channel.send('no u')
 
     # This has to be here, otherwise allll the other @client.commands won't work
