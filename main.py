@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
-import discord
 import configparser
 from random import randint
 from discord.ext import commands
 from os import path
+#from fuzzywuzzy import process, fuzz
+import re
+import discord
 
 client = commands.Bot(command_prefix = '%')
 
@@ -46,7 +48,9 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if 'no u' in message.content.lower() or ' nou ' in message.content.lower() or 'no-u' in message.content.lower() or 'no you' in message.content.lower() or 'no-you' in message.content.lower() or u'no\u00A0u' in message.content.lower() or u'no\u00A0you' in message.content.lower() or 'none thee' in message.content.lower() or 'none-thee' in message.content.lower() or u'none\u00A0thee' in message.content.lower(): # \u00A0 is a non-breaking space, the other kind of space in Unicode
+    print(message.content)
+    print(type(message.content))
+    if re.search(r"(no|none|not).*\n*(u|you|thee)", message.content, re.M|re.I|re.U): #Yes, this is a regular expression. Yes, it's hard to read (It's a regex, of course it is). If you want a good explanation of what on earth is going on, I suggest you go to https://regex101.com/ and punch it in.
         await message.channel.send('no u')
 
     # This has to be here, otherwise allll the other @client.commands won't work
