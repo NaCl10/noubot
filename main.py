@@ -48,8 +48,6 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    print(message.content)
-    print(type(message.content))
     if re.search(r"(no|none|not).*\n*(u|you|thee)", message.content, re.M|re.I|re.U): #Yes, this is a regular expression. Yes, it's hard to read (It's a regex, of course it is). If you want a good explanation of what on earth is going on, I suggest you go to https://regex101.com/ and punch it in.
         await message.channel.send('no u')
 
