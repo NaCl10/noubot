@@ -2,9 +2,9 @@
 
 import configparser
 from random import randint
-from discord.ext import commands
 from os import path
 import re
+from discord.ext import commands
 import discord
 
 client = commands.Bot(command_prefix = '%')
