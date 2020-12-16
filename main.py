@@ -4,7 +4,6 @@ import configparser
 from random import randint
 from discord.ext import commands
 from os import path
-#from fuzzywuzzy import process, fuzz
 import re
 import discord
 
