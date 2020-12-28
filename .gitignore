@@ -130,3 +130,6 @@ dmypy.json
 
 # Config (contains my token lol)
 config.ini
+
+# Zip that I use for Docker releases
+docker.zip
