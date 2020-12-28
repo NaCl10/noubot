@@ -48,7 +48,7 @@ async def on_message(message):
         return
 
     #Yes, this is a regular expression. Yes, it's hard to read (It's a regex, of course it is). If you want a good explanation of what on earth is going on, I suggest you go to https://regex101.com/ and punch it in.
-    if re.search(r"(no|none|not|nee).*\n*(u|you|thee|t[uú)", message.content, re.M|re.I|re.U):
+    if re.search(r"(no|none|not|nee).*\n*(u|you|thee|t[uú])", message.content, re.M|re.I|re.U):
         await message.channel.send('no u')
 
     # This has to be here, otherwise allll the other @client.commands won't work
