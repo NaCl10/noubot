@@ -1,6 +1,10 @@
 # Anti-no u
 A bot that automatically responds to various different variations of "no u" with "no u."
 
+## Usage
+Here's the link to [add it to your server](https://discord.com/api/oauth2/authorize?client_id=697143422623940688&permissions=52288&scope=bot)
+
+It doesn't require administrator permissions, so feel free to deny it view access to channels you don't want it to work in.
 ## Why not just use triggers from a bot like [Carl](https://carl.gg/)?
 While triggers from Carl and others are great, they're too slow for this.
 
@@ -10,10 +14,8 @@ As you can see, there appears to be some kind of cooldown on the triggers, **so 
 However, because this bot's triggers are hardcoded, they will respond to *every* message.
 ![A gif showing this bot's triggers responding to "no u" messages](https://github.com/NaCl10/noubot/blob/master/readme-gifs/anti%20no%20u%20bot.gif)
 
-## Usage
-Here's the link to [add it to your server](https://discord.com/api/oauth2/authorize?client_id=697143422623940688&permissions=52288&scope=bot)
-
-It doesn't require administrator permissions, so feel free to deny it view access to channels you don't want it to work in.
+## An important note
+This bot is known to be ***extremely*** sensitive to "no u" and will *frequently* trigger false positives.
 
 ## Selfhosting
 ### Setup
