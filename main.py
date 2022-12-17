@@ -30,7 +30,7 @@ async def on_message(message):
 
     #Yes, this is a regular expression. Yes, it's hard to read (It's a regex, of course it is). If you want a good explanation of what on earth is going on, I suggest you go to https://regex101.com/ and punch it in.
     #\u00FA is a letter u with an acute (that little mark above it)
-    if re.search('(no|none|not|nee)\s{0,10}(u|you|thee|t[u\u00FA])', message.content, re.M|re.I|re.U):
+    if re.search('(no|none|not|nee)\s{1,10}(u|you|thee|t[u\u00FA])', message.content, re.M|re.I|re.U):
         await message.channel.send('no u')
 
 client.run(config['config']['token'])
