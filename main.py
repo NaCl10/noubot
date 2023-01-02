@@ -5,7 +5,10 @@ from os import path
 import re
 import discord
 
-client = discord.Client()
+intents = discord.Intents.default()
+intents.message_content = True
+
+client = discord.Client(intents=intents)
 
 # Read config
 config = configparser.ConfigParser()
