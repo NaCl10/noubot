@@ -53,7 +53,7 @@ Then, edit the configuration file with your text editor of choice. Outside of Do
 Values:
 | Value | Description | Required |
 | ----- | ----------- | -------- |
-| token | The bot token. Information about getting a bot token can be found in [the discord.py documentation](https://discordpy.readthedocs.io/en/latest/discord.html#discord-intro). | Yes |
+| token | The bot token. Information about getting a bot token can be found in [the discord.py documentation](https://discordpy.readthedocs.io/en/latest/discord.html#discord-intro). NOTE: this bot DOES require the "message content" intent. | Yes |
 | status | Discord will display this as what the bot is "playing". It comes set to "no YOU!" by default, you can set it to whatever you want. | No |
 
 ### Updating
