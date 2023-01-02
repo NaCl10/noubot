@@ -33,9 +33,9 @@ After configuration, run main.py again to actually start the bot. It's recommend
 #### With Docker
 Pull and run the container:
 ```shell
-docker run -v /path/to/config.ini:/bot/config.ini --restart always -d --name noubot ghcr.io/nacl10/naclbot
+docker run -v /path/to/config.ini:/bot/config.ini --restart always -d --name noubot ghcr.io/nacl10/noubot/noubot
 ```
-NOTES: You can specify a particular version of the bot by adding `:release-<version number here>` (DO NOT prefix the version number with "v") to the end of `ghcr.io/nacl10/naclbot`. The path to config.ini shouldn't actually have a file called config.ini in it yet, it should just be where you want config.ini to be.  Make sure the path to config.ini ends in config.ini, even though config.ini doesn't exist yet. You can *technically* call the container something other than "noubot," but it's not recommended.
+NOTES: You can specify a particular version of the bot by adding `:release-<version number here>` (make sure prefix the version number with "v", exactly as it appears in the corresponding git tag) to the end of `ghcr.io/nacl10/noubot/noubot`. The path to config.ini shouldn't actually have a file called config.ini in it yet, it should just be where you want config.ini to be.  Make sure the path to config.ini ends in config.ini, even though config.ini doesn't exist yet. You can *technically* call the container something other than "noubot," but it's not recommended.
 
 It will error out. This is because you need to enter a valid bot token in config.ini. See [configuration](https://github.com/NaCl10/noubot#configuration) for more information on that.
 
@@ -63,7 +63,7 @@ Delete main.py (DO NOT delete config.ini), download the new main.py from the [re
 #### With Docker
 First, pull the new image:
 ```shell
-docker pull ghcr.io/nacl10/naclbot
+docker pull ghcr.io/nacl10/noubot/noubot
 ```
 Then, stop and remove the old container:
 ```shell
@@ -71,7 +71,7 @@ docker stop noubot && docker rm noubot
 ```
 Finally, re-create the container with the new image:
 ```shell
-docker run -v /path/to/config.ini:/bot/config.ini --restart always -d --name noubot ghcr.io/nacl10/naclbot
+docker run -v /path/to/config.ini:/bot/config.ini --restart always -d --name noubot ghcr.io/nacl10/noubot/noubot
 ```
 
 ## Contributing
